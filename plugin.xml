@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-mp3player" version="1.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <name>mp3player</name>
+
+    <js-module name="mp3player" src="www/mp3player.js">
+        <clobbers target="mp3player" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="mp3player">
+                <param name="ios-package" value="mp3player" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/mp3player.m" />
+    </platform>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="mp3player">
+                <param name="android-package" value="cordova.plugin.mp3player.mp3player" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/mp3player.java" target-dir="src/cordova/plugin/mp3player/mp3player" />
+    </platform>
+</plugin>

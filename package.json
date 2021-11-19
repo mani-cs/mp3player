@@ -1,0 +1,22 @@
+{
+  "name": "mp3player",
+  "version": "1.0.0",
+  "description": "Ionic Cordova plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mani-cs/mp3player.git"
+  },
+  "keywords": [
+    "mp3"
+  ],
+  "author": "Mani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mani-cs/mp3player/issues"
+  },
+  "homepage": "https://github.com/mani-cs/mp3player#readme"
+}
